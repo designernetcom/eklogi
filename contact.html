@@ -87,6 +87,7 @@
 	<!-- Theme CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+
 </head>
 
 <body>
@@ -105,7 +106,7 @@
     
                 <!-- Main navbar START -->
                 <div class="navbar-collapse collapse" id="navbarCollapse">
-                    <ul class="navbar-nav navbar-nav-scroll dropdown-hover mx-auto">
+                    <ul class="navbar-nav navbar-nav-scroll dropdown-hover " >
     
                         <!-- Nav item -->
                         <li class="nav-item dropdown">
@@ -233,63 +234,70 @@
                 <!-- Main navbar END -->
     
                 <!-- Buttons -->
-                <ul class="nav align-items-center dropdown-hover ms-sm-2">
-                    <!-- Dark mode option START -->
-                    <li class="nav-item dropdown dropdown-animation">
-                        <button class="btn btn-link text-warning mb-0 px-2 lh-1" id="bs-theme"
-                        type="button"
-                        aria-expanded="false"
-                        data-bs-toggle="dropdown"
-                        data-bs-display="static">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"  class="bi bi-circle-half theme-icon-active fill-mode fa-fw" viewBox="0 0 16 16">
-                            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
-                            <use href="#"></use>
-                        </svg>
-                        </button>
-    
-                        <ul class="dropdown-menu min-w-auto dropdown-menu-lg-end" aria-labelledby="bs-theme">
-                            <li class="mb-1">
-                                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light">
-                                    <svg width="16" height="16" fill="currentColor" class="bi bi-brightness-high-fill fa-fw mode-switch me-1" viewBox="0 0 16 16">
-                                        <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-                                        <use href="#"></use>
-                                    </svg>Light
-                                </button>
-                            </li>
-                            <li class="mb-1">
-                                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill fa-fw mode-switch me-1" viewBox="0 0 16 16">
-                                        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-                                        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
-                                        <use href="#"></use>
-                                    </svg>Dark
-                                </button>
-                            </li>
-                            <li>
-                                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-half fa-fw mode-switch me-1" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
-                                        <use href="#"></use>
-                                    </svg>Auto
-                                </button>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- Dark mode option END -->
-    
-            
-                    
-                    <!-- Responsive navbar toggler -->
-                    <li class="nav-item">
-                        <button class="navbar-toggler ms-sm-3 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-animation">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </span>
-                        </button>
-                    </li>	
-                </ul>
+				<ul class="nav align-items-center dropdown-hover ms-sm-2">
+			
+					<li class="nav-item dropdown dropdown-animation">
+						<button class="btn btn-link mb-0 px-2 lh-1" id="bd-theme"
+						type="button"
+						aria-expanded="false"
+						data-bs-toggle="dropdown"
+						data-bs-display="static">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"  class="bi bi-circle-half theme-icon-active fill-mode fa-fw" viewBox="0 0 16 16">
+							<path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+							<use href="#"></use>
+						</svg>
+						</button>
+	
+						<ul class="dropdown-menu min-w-auto dropdown-menu-end" aria-labelledby="bd-theme">
+							<li class="mb-1">
+								<button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light">
+									<svg width="16" height="16" fill="currentColor" class="bi bi-brightness-high-fill fa-fw mode-switch me-1" viewBox="0 0 16 16">
+										<path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+										<use href="#"></use>
+									</svg>Light
+								</button>
+							</li>
+							<li class="mb-1">
+								<button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill fa-fw mode-switch me-1" viewBox="0 0 16 16">
+										<path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+										<path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+										<use href="#"></use>
+									</svg>Dark
+								</button>
+							</li>
+							<li>
+								<button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-half fa-fw mode-switch me-1" viewBox="0 0 16 16">
+										<path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+										<use href="#"></use>
+									</svg>Auto
+								</button>
+							</li>
+						</ul>
+					</li>
+					<!-- Sign up button -->
+					<li class="nav-item me-2">
+						<a href="" class="btn btn-sm  mb-0"> <input type="text"  placeholder="Search here" width="100%" style="border-radius: 5px;padding: 5px;"/></a>
+					</li>
+					<!-- Buy now button -->
+					<!-- <li class="nav-item d-none d-sm-block">
+						<button class="btn btn-sm btn-primary mb-0">Buy now!</button>
+					</li> -->
+					<!-- Responsive navbar toggler -->
+					 		<!-- Dark mode option START -->
+		
+					<!-- Dark mode option END -->
+					<li class="nav-item">
+						<button class="navbar-toggler ms-sm-3 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-animation">
+								<span></span>
+								<span></span>
+								<span></span>
+							</span>
+						</button>
+					</li>	
+				</ul>
     
             </div>
         </nav>
@@ -303,123 +311,102 @@
 
 <!-- =======================
 Main hero START -->
-<section class="pt-7 pt-md-8">
-	<div class="container pt-4 pt-md-0">
-		<div class="row justify-content-between">
+<section style=" min-height: 100vh;">
+	<div style="max-width: 1200px; margin: 0 auto; padding: 40px 20px;">
+		<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
 
-			<div class="col-lg-6 mb-6 mb-lg-0">
-				<!-- Image -->
-                <div class="col-lg-12 mt-7 mt-lg-0">
-                    <div class="position-relative d-flex justify-content-center">
-                        <!-- Hero image -->
-                        <img src="assets/images/Agency-vs-consultancy-banner-1.jpg" class="rounded" alt="" height="600px">
-    
-                     
-                    </div>
-                </div>	
+			<div style="flex: 1 1 45%; max-width: 600px; margin-bottom: 40px;">
+				<div style="position: relative; display: flex; justify-content: center;">
+					<img src="assets/images/Agency-vs-consultancy-banner-1.jpg" alt="Hero Image" style="width: 100%; max-height: 500px; object-fit: cover; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.2); transition: transform 0.3s ease;">
+				</div>
 			</div>
 
-			<div class="col-lg-6 col-xl-5">
-				<div class="card card-body shadow border p-sm-5">
-			
-
-					<form class="row g-4">
-						<div class="col-md-6">
-							<label class="form-label heading-color">Your name *</label>
-							<input type="text" class="form-control form-control-lg" placeholder="Full name">
+			<div style="flex: 1 1 45%; max-width: 500px;">
+				<div style="background: #ffffff; border-radius: 20px; padding: 40px; box-shadow: 0 15px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease; transform: translateY(0);">
+					<form style="display: grid; gap: 20px;">
+						<div style="display: flex; gap: 20px;">
+							<div style="flex: 1;">
+								<label style="display: block; font-size: 16px; font-weight: 400; color: #333; margin-bottom: 8px;">Name</label>
+								<input type="text" placeholder="" style="width: 100%; padding: 12px; font-size: 16px; border: 2px solid #e0e0e0; border-radius: 10px; outline: none; transition: border-color 0.3s ease, box-shadow 0.3s ease;">
+							</div>
+							<div style="flex: 1;">
+								<label style="display: block; font-size: 16px; font-weight: 400; color: #333; margin-bottom: 8px;">Email</label>
+								<input type="email" placeholder="" style="width: 100%; padding: 12px; font-size: 16px; border: 2px solid #e0e0e0; border-radius: 10px; outline: none; transition: border-color 0.3s ease, box-shadow 0.3s ease;">
+							</div>
 						</div>
 
-						<div class="col-md-6">
-							<label class="form-label heading-color">Email address *</label>
-							<input type="email" class="form-control form-control-lg" id="floatingInput" placeholder="name@example.com">
+						<div style="display: flex; gap: 20px;">
+							<div style="flex: 1;">
+								<label style="display: block; font-size: 16px; font-weight: 400; color: #333; margin-bottom: 8px;">Phone </label>
+								<input type="text" placeholder="" style="width: 100%; padding: 12px; font-size: 16px; border: 2px solid #e0e0e0; border-radius: 10px; outline: none; transition: border-color 0.3s ease, box-shadow 0.3s ease;">
+							</div>
+							<div style="flex: 1;">
+								<label style="display: block; font-size: 16px; font-weight: 400; color: #333; margin-bottom: 8px;">Company</label>
+								<input type="text" placeholder="" style="width: 100%; padding: 12px; font-size: 16px; border: 2px solid #e0e0e0; border-radius: 10px; outline: none; transition: border-color 0.3s ease, box-shadow 0.3s ease;">
+							</div>
 						</div>
 
-						<div class="col-md-6">
-							<label class="form-label heading-color">Phone number *</label>
-							<input type="text" class="form-control form-control-lg" placeholder="(xxx) xx xxxx">
+						<div>
+							<label style="display: block; font-size: 16px; font-weight: 400; color: #333; margin-bottom: 8px;">Message</label>
+							<textarea placeholder="" style="width: 100%; height: 140px; padding: 12px; font-size: 16px; border: 2px solid #e0e0e0; border-radius: 10px; outline: none; resize: vertical; transition: border-color 0.3s ease, box-shadow 0.3s ease;"></textarea>
 						</div>
 
-						<div class="col-md-6">
-							<label class="form-label heading-color">Company *</label>
-							<input type="text" class="form-control form-control-lg" placeholder="Company name">
-						</div>
-
-						<div class="col-12">
-							<label class="form-label heading-color">Message *</label>
-							<textarea class="form-control" placeholder="Write your message here...." id="floatingTextarea2" style="height: 150px"></textarea>
-						</div>
-						<!-- Button -->
-						<button class="btn btn-lg btn-primary mb-0">Send a message</button>
+						<button type="submit" style="width: 100%; padding: 15px; font-size: 16px; font-weight: 400; color: #fff; background: linear-gradient(90deg, #6b48ff 0%, #00ddeb 100%); border: none; border-radius: 10px; cursor: pointer; transition: background 0.3s ease, transform 0.2s ease; box-shadow: 0 5px 15px rgba(107,72,255,0.4);">Send a Message</button>
 					</form>
-				</div>	
+				</div>
 			</div>
 
-		</div> <!-- Row END -->
+		</div>
 	</div>
 </section>
 <!-- =======================
 Main hero END -->
 <!-- =======================
 Contact info & Map START -->
-<Section class="py-0 ">
-	<div class="container">
-		<div class="row row-cols-1 row-cols-lg-3 g-4 mb-6">
+<section style="padding: 0px 0; ">
+	<div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+		<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 60px;">
 			<!-- Address info -->
-			<div class="col">
-				<div class="card card-body bg-light border p-sm-5">
-					<!-- Icon -->
-					<div class="mb-4"><i class="bi bi-geo-alt fa-xl text-primary"></i></div>
-					<!-- Title -->
-					<h6 class="mb-4">Office Address</h6>
-					<!-- Office item -->
-					<div class="d-flex align-items-center mb-2">
-		
-					
+			<div>
+				<div style="background: #ffffff; border: none; border-radius: 15px; padding: 40px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+					<div style="margin-bottom: 20px;">
+						<i class="bi bi-geo-alt" style="font-size: 2.0rem; color: #6b48ff;"></i>
 					</div>
-					<address class="mb-0">Office No. 1002, 10th Floor, Finswell, Viman Nagar, Pune , Maharashtra , India - 411014.
-
-                    </address>
+					<h6 style="font-size: 1.25rem; font-weight: 600; color: #333; margin-bottom: 20px;">Office Address</h6>
+					<address style="font-size: 1rem; color: #555; line-height: 1.6; margin: 0;">
+						Office No. 1002, 10th Floor, Finswell, Viman Nagar, Pune, Maharashtra, India - 411014.
+					</address>
 				</div>
 			</div>
 
 			<!-- Email info -->
-			<div class="col">
-				<div class="card card-body bg-light border p-sm-5">
-					<!-- Icon -->
-					<div class="mb-4"><i class="bi bi-envelope fa-xl text-primary"></i></div>
-					<!-- Title -->
-					<h6 class="mb-3">Email us</h6>
-					
-					<a href="#" class="heading-color text-primary-hover text-decoration-underline mb-0">info@eklogi.com</a>
-				</div>
-			</div>
-
-			<!-- Address info -->
-			<div class="col">
-				<div class="card card-body bg-light border p-sm-5">
-					<!-- Icon -->
-					<div class="mb-4"><i class="bi bi-geo-alt fa-xl text-primary"></i></div>
-					<!-- Title -->
-					<h6 class="mb-4">Registered office :</h6>
-					<!-- Office item -->
-					<div class="d-flex align-items-center mb-2">
-		
-					
+			<div>
+				<div style="background: #ffffff; border: none; border-radius: 15px; padding: 40px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+					<div style="margin-bottom: 20px;">
+						<i class="bi bi-envelope" style="font-size: 2.0rem; color: #6b48ff;"></i>
 					</div>
-					<address class="mb-0">F-401, ZIRCON VENTURE XENON BLDGS, Viman Nagar, PUNE, Pune City, Pune- 411014.
-
-                    </address>
+					<h6 style="font-size: 1.25rem; font-weight: 600; color: #333; margin-bottom: 20px;">Email Us</h6>
+					<a href="mailto:info@eklogi.com" style="font-size: 1rem; color: #6b48ff; text-decoration: none; transition: color 0.3s ease;">info@eklogi.com</a>
 				</div>
 			</div>
 
-		</div> <!-- Row END -->
+			<!-- Registered office -->
+			<div>
+				<div style="background: #ffffff; border: none; border-radius: 15px; padding: 40px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+					<div style="margin-bottom: 20px;">
+						<i class="bi bi-geo-alt" style="font-size: 2.0rem; color: #6b48ff;"></i>
+					</div>
+					<h6 style="font-size: 1.25rem; font-weight: 600; color: #333; margin-bottom: 20px;">Registered Office</h6>
+					<address style="font-size: 1rem; color: #555; line-height: 1.6; margin: 0;">
+						F-401, Zircon Venture Xenon Bldgs, Viman Nagar, PUNE, Pune City, Pune- 411014.
+					</address>
+				</div>
+			</div>
+		</div>
 	</div>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57522.006765775186!2d73.83674504863278!3d18.561910200000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c15a81afc021%3A0x1381bafdd2f10fca!2sLMS%20Finswell!5e1!3m2!1sen!2sin!4v1750328223441!5m2!1sen!2sin" style="margin-bottom: -5px;" width="100%" height="700px" aria-hidden="false" tabindex="0"></iframe>
-	<!-- Map -->
-	
-
-</Section>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57522.006765775186!2d73.83674504863278!3d18.561910200000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c15a81afc021%3A0x1381bafdd2f10fca!2sLMS%20Finswell!5e1!3m2!1sen!2sin!4v1750328223441!5m2!1sen!2sin" style="width: 100%; height: 600px; border: none; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); margin-bottom: 0;" aria-hidden="false" tabindex="0"></iframe>
+</section>
 <!-- =======================
 Contact info & Map END -->
 <!-- =======================
@@ -506,10 +493,10 @@ Footer START -->
 					<div class="col-md-4">
 						<h6 class="mb-2 mb-md-4">Contact details</h6>
 						<ul class="list-group list-group-borderless">
-							<li class="d-flex mb-3"><i class="me-2 text-primary bi bi-geo-alt"></i>Office address: <br>Office No. 1002, 10th Floor, Finswell, Viman Nagar, Pune , Maharashtra , India - 411014. </li>
-							<li class="d-flex mb-3"><i class="me-2 text-primary bi bi-geo-alt"></i>Registered office :: <br>F-401, Zircon Venture Xenon Bldgs, Viman Nagar, PUNE, Pune City, Pune- 411014. </li>
+							<li class="d-flex mb-3"><i class="bi bi-geo-alt" style="font-size: 1.0rem; color: #6b48ff;"></i>Office address: <br>Office No. 1002, 10th Floor, Finswell, Viman Nagar, Pune , Maharashtra , India - 411014. </li>
+							<li class="d-flex mb-3"><i class="bi bi-geo-alt" style="font-size: 1.0rem; color: #6b48ff;"></i>Registered office :: <br>F-401, Zircon Venture Xenon Bldgs, Viman Nagar, PUNE, Pune City, Pune- 411014. </li>
 							
-							<li class="d-flex mb-3"><i class="me-2 text-primary bi bi-envelope"></i> info@eklogi.com</li>
+							<li class="d-flex mb-3"><i class="me-2  bi bi-envelope" style="font-size: 1.0rem; color: #6b48ff;"></i> info@eklogi.com</li>
 					
 						</ul>
 					</div>

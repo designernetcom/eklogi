@@ -4584,7 +4584,7 @@ textarea.form-control-lg {
   --bs-navbar-hover-color: #09B850;
   --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
   --bs-navbar-active-color: #09B850;
-  --bs-navbar-brand-padding-y: 30px;
+  --bs-navbar-brand-padding-y: 20px;
   --bs-navbar-brand-margin-end: 1rem;
   --bs-navbar-brand-font-size: 1.25rem;
   --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
@@ -19556,7 +19556,7 @@ video {
 }
 
 section {
-  padding-top: 7.5rem;
+  padding-top: 4.5rem;
   padding-bottom: 7.5rem;
 }
 
@@ -20960,3 +20960,10 @@ a.text-primary-hover:hover, button.text-primary-hover:hover {
 
 /*User CSS*/
 /*# sourceMappingURL=style.css.map */
+
+
+@media (max-width: 767px) {
+  .nav-item.me-2 {
+      display: none;
+  }
+}
