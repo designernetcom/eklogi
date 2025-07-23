@@ -21,7 +21,6 @@ const Header = () => {
                 className="dark-mode-item navbar-brand-item"
                 src="assets/images/logo/logo.png"
                 alt="logo"
-                style={{ height: 60 }}
               />
             </NavLink>
             {/* Logo END 
@@ -31,13 +30,22 @@ const Header = () => {
               <ul className="navbar-nav navbar-nav-scroll dropdown-hover mx-auto">
                 {/* Nav item */}
                 <li className="nav-item dropdown">
-                  <NavLink className="nav-link" to="/" activeClassName="active">
+                  <NavLink
+                    className="nav-link"
+                    to="/"
+                    activeClassName="active"
+                    style={{ fontSize: "19px" }}
+                  >
                     Home
                   </NavLink>
                 </li>
                 {/* Nav item */}
                 <li className="nav-item dropdown">
-                  <NavLink className="nav-link" to="/about">
+                  <NavLink
+                    className="nav-link"
+                    to="/about"
+                    style={{ fontSize: "19px" }}
+                  >
                     About Us
                   </NavLink>
                 </li>
@@ -45,10 +53,10 @@ const Header = () => {
                 <li className="nav-item dropdown dropdown-fullwidth">
                   <p
                     className="nav-link dropdown-toggle"
-                   
                     data-bs-toggle="dropdown"
                     aria-haspopup="true"
                     aria-expanded="false"
+                    style={{ fontSize: "19px" }}
                   >
                     Our Services
                   </p>
@@ -231,6 +239,7 @@ const Header = () => {
                     className="nav-link"
                     to="/blog"
                     activeClassName="active"
+                    style={{ fontSize: "19px" }}
                   >
                     Blog
                   </NavLink>
@@ -241,6 +250,7 @@ const Header = () => {
                     className="nav-link"
                     to="/contact"
                     activeClassName="active"
+                    style={{ fontSize: "19px" }}
                   >
                     Contact Us
                   </NavLink>
@@ -252,7 +262,7 @@ const Header = () => {
             <ul className="nav align-items-center dropdown-hover ms-sm-2">
               {/* Dark mode option START */}
               <li className="nav-item dropdown dropdown-animation">
-                <button
+                {/* <button
                   className="btn btn-link mb-0 px-2 lh-1"
                   id="bd-theme"
                   type="button"
@@ -270,8 +280,8 @@ const Header = () => {
                     <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
                     <use href="#" />
                   </svg>
-                </button>
-                <ul
+                </button> */}
+                {/* <ul
                   className="dropdown-menu min-w-auto dropdown-menu-end"
                   aria-labelledby="bd-theme"
                 >
@@ -335,7 +345,7 @@ const Header = () => {
                       Auto
                     </button>
                   </li>
-                </ul>
+                </ul> */}
               </li>
               {/* Dark mode option END */}
               {/* Search */}

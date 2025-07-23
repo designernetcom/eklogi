@@ -2,6 +2,34 @@ import React from "react";
 
 const Contact = () => (
   <>
+    <section className="pt-7 pb-0 bg-dark" data-bs-theme="dark">
+      <div className="container-fluid pt-3 pt-xl-5">
+        <div className="row">
+          <div className="col-xxl-12 mx-auto">
+            <div
+              className="card bg-parallax h-200px h-md-300px h-xl-300px overflow-hidden"
+              style={{
+                paddingTop: "28px",
+                paddingBottom: 0,
+                backgroundColor: "#1e293b", // bg-dark
+                backgroundImage:
+                  "url(assets/assets_new/images/banner-6617550_1280.webp)",
+                backgroundSize: "cover", // Assuming cover for typical background image behavior
+                backgroundPosition: "center", // Centering the background image
+                color: "#ffffff", // Assuming dark theme implies light text for contrast
+              }}
+            >
+              {/* background dark overlay */}
+              <div className="bg-overlay bg-dark bg-opacity-50" />
+              {/* Title */}
+              <div className="card-img-overlay d-flex align-items-center justify-content-center text-center z-index-2">
+                <h2 style={{ color: "#fff" }}>Contact</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section className="pt-7 pt-md-8 bg-dark" data-bs-theme="dark">
       {/* SVG decoration */}
       {/* SVG decoration */}
@@ -10,9 +38,11 @@ const Contact = () => (
           <div className="col-lg-6 mb-6 mb-lg-0">
             <div className="d-flex flex-column h-100">
               {/* Title */}
-              <h1 className="mb-3">Get in touch </h1>
+              <h1 className="mb-3" style={{ color: "#fff" }}>
+                Get in touch{" "}
+              </h1>
               <p className="mb-0">
-                You can reach us anytime via <a href="#">example@gmail.com</a>
+                You can reach us anytime via <a href="#">info@eklogi.com</a>
               </p>
               {/* Social button */}
               <div className="d-sm-flex gap-3 align-items-center my-5">

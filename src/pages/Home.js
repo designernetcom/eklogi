@@ -59,9 +59,9 @@ About START */}
         {/* Main title */}
         <div className="row mb-3 mb-xl-0">
           <div className="col-xl-9">
-            <h4 className="lh-base mb-0">
+            <h2 className="lh-base mb-0" style={{ color: "#fff" }}>
               Eklogi Technology Consulting &amp; Services LLP
-            </h4>
+            </h2>
           </div>
         </div>
         {/* About detail START */}
@@ -446,7 +446,6 @@ About END */}
 
     <Services />
 
-
     <section>
       <div className="container">
         <div className="row g-4 g-sm-6">
@@ -454,7 +453,9 @@ About END */}
           {/* Title and content */}
           <div className="row mb-4 mb-md-6 mt-7">
             <div className="col-md-5 col-lg-4">
-              <h2 className="mb-0">Who We Are</h2>
+              <h2 className="mb-0" style={{ color: "#fff" }}>
+                Who We Are
+              </h2>
             </div>
             <div className="col-md-7 col-lg-5 ms-auto">
               <p>
@@ -831,7 +832,7 @@ About accordion END */}
         </div>
       </div>
     </section>
-<BlogSection/>
+    <BlogSection />
     {/* **************** MAIN CONTENT END **************** */}
   </>
 );

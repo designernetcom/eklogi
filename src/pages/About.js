@@ -8,12 +8,24 @@ Main Banner START */}
       <div className="container-fluid pt-3 pt-xl-5">
         <div className="row">
           <div className="col-xxl-12 mx-auto">
-            <div className="card bg-parallax h-200px h-md-300px h-xl-300px overflow-hidden">
+            <div
+              className="card bg-parallax h-200px h-md-300px h-xl-300px overflow-hidden"
+              style={{
+                paddingTop: "28px",
+                paddingBottom: 0,
+                backgroundColor: "#1e293b", // bg-dark
+                backgroundImage:
+                  "url(assets/assets_new/images/banner-6617550_1280.webp)",
+                backgroundSize: "cover", // Assuming cover for typical background image behavior
+                backgroundPosition: "center", // Centering the background image
+                color: "#ffffff", // Assuming dark theme implies light text for contrast
+              }}
+            >
               {/* background dark overlay */}
               <div className="bg-overlay bg-dark bg-opacity-50" />
               {/* Title */}
               <div className="card-img-overlay d-flex align-items-center justify-content-center text-center z-index-2">
-                <h4>About Us</h4>
+                <h2 style={{ color: "#fff" }}>About Us</h2>
               </div>
             </div>
           </div>

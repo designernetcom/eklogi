@@ -85,10 +85,10 @@ const BlogSection = () => {
   ];
 
   return (
-    <section className="pb-0">
+    <section className="pb-0 bg-dark" data-bs-theme="dark">
       <div className="container mx-auto px-4">
         <div className="mb-4 sm:mb-6">
-          <h2 className="text-2xl md:text-3xl font-bold mb-0">Blogs</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-0" style={{ color:"#fff" }}>Blogs</h2>
         </div>
 
         <Swiper
