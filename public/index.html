@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <title> Eklogi</title>
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="true" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="theme-color" content="#000000" />
+	<!-- Dark mode -->
+
+
+	<!-- Dark mode -->
+	<script>
+		const storedTheme = localStorage.getItem('theme')
+	
+		const getPreferredTheme = () => {
+			if (storedTheme) {
+				return storedTheme
+			}
+			return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'dark' // Changed default to 'dark'
+		}
+	
+		const setTheme = function (theme) {
+			if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+				document.documentElement.setAttribute('data-bs-theme', 'dark')
+			} else {
+				document.documentElement.setAttribute('data-bs-theme', theme)
+			}
+		}
+	
+		setTheme(getPreferredTheme())
+	
+		window.addEventListener('DOMContentLoaded', () => {
+			var el = document.querySelector('.theme-icon-active');
+			if (el != 'undefined' && el != null) {
+				const showActiveTheme = theme => {
+					const activeThemeIcon = document.querySelector('.theme-icon-active use')
+					const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+					const svgOfActiveBtn = btnToActive.querySelector('.mode-switch use').getAttribute('href')
+	
+					document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+						element.classList.remove('active')
+					})
+	
+					btnToActive.classList.add('active')
+					activeThemeIcon.setAttribute('href', svgOfActiveBtn)
+				}
+	
+				window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+					if (storedTheme !== 'light' && storedTheme !== 'dark') { // Simplified condition
+						setTheme(getPreferredTheme())
+					}
+				})
+	
+				showActiveTheme(getPreferredTheme())
+	
+				document.querySelectorAll('[data-bs-theme-value]')
+					.forEach(toggle => {
+						toggle.addEventListener('click', () => {
+							const theme = toggle.getAttribute('data-bs-theme-value')
+							localStorage.setItem('theme', theme)
+							setTheme(theme)
+							showActiveTheme(theme)
+						})
+					})
+			}
+		})
+	</script>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="">
+
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/assets_new/vendor/font-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/assets_new/vendor/bootstrap-icons/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="assets/assets_new/vendor/aos/aos.css">
+	<link rel="stylesheet" type="text/css" href="assets/assets_new/vendor/swiper/swiper-bundle.min.css">
+	
+	<!-- Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/assets_new/css/style.css">
+<style>
+	.modern-search-btn {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+.modern-search-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  /* background: linear-gradient(135deg, #6e8efb, #a777e3); Gradient background */
+  color: #000;
+  border-radius: 5%; /* Circular shape */
+  border: none;
+  transition: all 0.3s ease;
+  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); Subtle shadow */
+  text-decoration: none;
+}
+
+.modern-search-btn i {
+  font-size: 1.2rem; /* Icon size */
+}
+
+/* .modern-search-btn:hover {
+  transform: scale(1.1); 
+  background: linear-gradient(135deg, #a777e3, #6e8efb); 
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); 
+} */
+
+.modern-search-btn:active {
+  transform: scale(0.95); /* Press effect */
+}
+</style>
+
+  </head>
+  <body class="custom-cursor">
+    
+    
+    <div class="custom-cursor__cursor"></div>
+
+    <div class="custom-cursor__cursor-two"></div>
+
+
+
+
+    <div class="page-wrapper">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    
+
+
+
+
+
+
+
+ 
+<!-- Bootstrap JS -->
+<script src="assets/assets_new/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<!--Vendors-->
+<script src="assets/assets_new/vendor/purecounterjs/dist/purecounter_vanilla.js"></script>
+<script src="assets/assets_new/vendor/isotope/isotope.pkgd.min.js"></script>
+<script src="assets/assets_new/vendor/imagesLoaded/imagesloaded.pkgd.min.js"></script>
+<script src="assets/assets_new/vendor/aos/aos.js"></script>
+<script src="assets/assets_new/vendor/swiper/swiper-bundle.min.js"></script>
+
+
+<!-- Theme Functions -->
+<script src="assets/js/functions.js"></script>
+
+  </body>
+</html>
